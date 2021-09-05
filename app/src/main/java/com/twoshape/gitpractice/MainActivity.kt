@@ -15,5 +15,7 @@ class MainActivity : AppCompatActivity() {
         println("Change 2")
         println("Change 3")
 
+        println("Hello from GitPractice 2")
+
     }
 }
