@@ -11,5 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         println("This is the second commit")
 
+        println("This is the third commit")
+
     }
 }
