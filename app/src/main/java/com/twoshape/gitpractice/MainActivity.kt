@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         println("This is the second commit")
 
-        println("This is for experimental commit")
+        println("Change 2")
 
     }
 }
