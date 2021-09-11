@@ -72,4 +72,11 @@ class RegistrationUtilTest{
         assertThat(result).isFalse()
     }
 
+    @Test
+    fun `fib of 0 return 1 return true`(){
+        val result = RegistrationUtil.fib(0)
+
+        assertThat(result).isEqualTo(0L)
+    }
+
 }
