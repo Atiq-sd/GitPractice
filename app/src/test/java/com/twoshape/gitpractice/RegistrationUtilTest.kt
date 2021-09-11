@@ -73,10 +73,28 @@ class RegistrationUtilTest{
     }
 
     @Test
-    fun `fib of 0 return 1 return true`(){
+    fun `fib of 0 return 0 return true`(){
         val result = RegistrationUtil.fib(0)
 
         assertThat(result).isEqualTo(0L)
+    }
+
+    @Test
+    fun `fib of 1 return 1 return true`(){
+        val result = RegistrationUtil.fib(1)
+
+        assertThat(result).isEqualTo(1L)
+    }
+
+    @Test
+    fun `fib of n return fib(n-1) + fib(n-2) return true`(){
+
+        val n = 500000000
+        val result_n = RegistrationUtil.fib(n)
+        val result_1 = RegistrationUtil.fib(n-1)
+        val result_2 = RegistrationUtil.fib(n-2)
+
+        assertThat(result_n).isEqualTo(result_1+result_2)
     }
 
 }
